@@ -38,8 +38,8 @@ var crsr = document.querySelector(".cursor");
 var main = document.querySelector(".main");
 main.addEventListener("mousemove", (dets) => {
 
-    crsr.style.left = dets.x +20 + "px";
-    crsr.style.top = dets.y + 20 + "px";
+    crsr.style.left = dets.x + 20 + "px";
+    crsr.style.top = dets.y + "px";
 
 })
 
@@ -107,17 +107,17 @@ var boxes = document.querySelectorAll(".box");
 boxes.forEach(function (elem) {
     elem.addEventListener("mouseenter", () => {
         elem.style.backgroundColor = "red";
-       var img = elem.getAttribute("data-image");
-       crsr.style.width = "300px";
-       crsr.style.height = "250px";
-       crsr.style.backgroundImage = `url(${img})`;
+        var img = elem.getAttribute("data-image");
+        crsr.style.width = "300px";
+        crsr.style.height = "250px";
+        crsr.style.backgroundImage = `url(${img})`;
     })
 })
 boxes.forEach(function (elem) {
     elem.addEventListener("mouseleave", () => {
         elem.style.backgroundColor = "black";
-       crsr.style.width = "20px";
-       crsr.style.height = "20px";
-       crsr.style.backgroundImage = ``;
+        crsr.style.width = "21px";
+        crsr.style.height = "21px";
+        crsr.style.backgroundImage = ``;
     })
 })
