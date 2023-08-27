@@ -116,8 +116,8 @@ boxes.forEach(function (elem) {
 boxes.forEach(function (elem) {
     elem.addEventListener("mouseleave", () => {
         elem.style.backgroundColor = "black";
-        crsr.style.width = "21px";
-        crsr.style.height = "21px";
+        crsr.style.width = "20px";
+        crsr.style.height = "20px";
         crsr.style.backgroundImage = ``;
     })
 })
