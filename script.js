@@ -34,6 +34,8 @@ function init() {
 
 init();
 
+//initialize done
+
 var crsr = document.querySelector(".cursor");
 var main = document.querySelector(".main");
 main.addEventListener("mousemove", (dets) => {
