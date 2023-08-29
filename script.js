@@ -32,9 +32,9 @@ function init() {
 
 }
 
+//initialize done
 init();
 
-//initialize done
 
 var crsr = document.querySelector(".cursor");
 var main = document.querySelector(".main");
